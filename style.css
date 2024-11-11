@@ -3,26 +3,6 @@ body {
     background-color: black;
 }
 
-.projects {
-    color: white;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 600px;
-    margin-top: 50px;
-}
-
-.projects table {
-    width: 100%;
-    text-align: center;
-}
-
-.projects h2 {
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    margin-top: 50px;
-}
-
 .content {
     max-width: 600px;
     margin: 0 auto;
@@ -51,10 +31,10 @@ body {
     list-style-type: none;
     background-color: #333;
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
-    font-size: 2rem;
-    max-width: 450px;
+    font-size: 1.5rem;
+    max-width: 400px;
     border-radius: 10px;
 }
 
@@ -66,19 +46,118 @@ body {
 .navbar a {
     color: inherit;
     text-decoration: none;
+    transition: color 0.1s ease, text-shadow 0.1s ease;
 }
 
-.grid-container {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+.navbar a:hover {
+    color: #fff;
+    transition: color 0.1s ease, text-shadow 0.1s ease;
+    text-shadow: 0 0 10px #fff;
+}
+
+.projects {
+    color: white;
     padding: 20px;
-    font-size: 30px;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.projects table {
+    width: 100%;
     text-align: center;
-  }
+}
+
+.projects h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.projectItem {
+    width: 300px;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.popup {
+    width: 340px;
+    position: absolute;
+    z-index: 1000;
+    background: #222;
+    padding: 10px;
+    transform: translate(-10%, -50%);
+    display: none;
+    animation: fadeIn 0.1s forwards;
+    border-radius: 5px;
+}
+
+.popup video {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.popup p {
+    margin: 10px;
+}
+
+.popup a {
+    color: rgb(0, 162, 255);
+    text-decoration: none;
+    transition: text-shadow 0.1s ease;
+}
+
+.popup a:hover {
+    text-shadow: 0 0 10px rgb(0, 162, 255);
+    transition: text-shadow 0.1s ease;
+}
+
+.popUpTechnologies {
+    height: 25px;
+    text-align: center;
+}
+
+.popUpTechnologies a img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.1s ease;
+}
+
+.popUpTechnologies a img:hover {
+    transform: scale(1.28);
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.technologies {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.technologies a img {
+    height: 48px;
+    margin: 5px;
+    transition: transform 0.1s ease;
+}
+
+.technologies a img:hover {
+    transform: scale(1.28);
+}

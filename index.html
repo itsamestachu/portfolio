@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
 <body>
     <div class="navbar">
         <ul class="li"><a href="index.html">Home</a></ul>
-        <ul class="li"><a href="about.html">Projects</a></ul>
+        <ul class="li"><a href="projects.html">Projects</a></ul>
         <ul class="li"><a href="contact.html">Contact</a></ul>
     </div>
 
@@ -20,16 +24,109 @@
             <h1>Hi, I'm Stasiu</h1>
             <p>I'm a software developer that makes all kinds of things.</p>
         </div>
+
+        <div class="technologies">
+            <a target="_blank" href="https://www.w3.org/html/"><img src="img/technologies/html.png" alt="HTML"></a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img src="img/technologies/css.png" alt="CSS"></a>
+            <a target="_blank" href="https://www.javascript.com/"><img src="img/technologies/javascript.png" alt="JavaScript"></a>
+            <a target="_blank" href="https://git-scm.com/"><img src="img/technologies/git.png" alt="Git"></a>
+            <a target="_blank" href="https://github.com/"><img src="img/technologies/github.png" alt="GitHub"></a>
+            <a target="_blank" href="https://www.python.org/"><img src="img/technologies/python.png" alt="Python"></a>
+            <a target="_blank" href="https://www.rust-lang.org/"><img class="invert" src="img/technologies/rust.png" alt="Rust"></a>
+            <a target="_blank" href="https://unity.com/"><img src="img/technologies/unity.png" alt="Unity"></a>
+            <a target="_blank" href="https://godotengine.org/"><img src="img/technologies/godot.png" alt="Godot"></a>
+            <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="img/technologies/csharp.png" alt="C#"></a>
+            <a target="_blank" href="https://www.lua.org/"><img src="img/technologies/lua.png" alt="Lua"></a>
+            <a target="_blank" href="https://store.steampowered.com/"><img src="img/technologies/steam.png" alt="Steam"></a>
+            <a target="_blank" href="https://www.teardowngame.com/"><img src="img/technologies/teardown.png" alt="Teardown"></a>
+            <a target="_blank" href="https://ephtracy.github.io/"><img src="img/technologies/magicavoxel.png" alt="MagicaVoxel"></a>
+            <a target="_blank" href="https://code.visualstudio.com"><img src="img/technologies/vscode.png" alt="Visual Studio Code"></a>
+            <a target="_blank" href="https://www.blender.org/"><img src="img/technologies/blender.png" alt="Blender"></a>
+            <a target="_blank" href="https://www.retrogadgets.game/"><img src="img/technologies/rg.png" alt="Retro Gadgets"></a>
+        </div>
+
         <div class="projects">
             <h2>My projects</h2>
             <table>
-                <th>
-                    <td>Games</td>
-                    <td>Web</td>
-                    <td>Mods</td>
-                </th>
+                <tr>
+                    <th>Web</th>
+                    <th>Other</th>
+                    <th>Mods</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="projectItem">
+                            <h3>Portfolio</h3>
+                            <p>This website</p>
+                            <div class="popup">
+                                <img src="img/portfolio.jpg" alt="Screenshot of this website">
+
+                                <div class="popUpTechnologies">
+                                    <a target="_blank" href="https://git-scm.com/"><img src="img/technologies/git.png" alt="Git"></a>
+                                    <a target="_blank" href="https://github.com"><img src="img/technologies/github.png" alt="Github"></a>
+                                    <a target="_blank" href="https://www.w3.org/html/"><img src="img/technologies/html.png" alt="HTML"></a>
+                                    <a target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img src="img/technologies/css.png" alt="CSS"></a>
+                                    <a target="_blank" href="https://www.javascript.com/"><img src="img/technologies/javascript.png" alt="JavaScript"></a>
+                                    <a target="_blank" href="https://code.visualstudio.com"><img src="img/technologies/vscode.png" alt="Visual Studio Code"></a>
+                                </div>
+
+                                <p>This website made for a project at school</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="projectItem">
+                            <h3>Untitled Unity project</h3>
+                            <p>Physics based shooter</p>
+
+                            <div class="popup">
+                                <video width="320" height="180" loop muted>
+                                    <source src="vid/unityGame.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                                <div class="popUpTechnologies">
+                                    <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="img/technologies/csharp.png" alt="C#"></a>
+                                    <a target="_blank" href="https://unity.com/"><img src="img/technologies/unity.png" alt="Unity"></a>
+                                    <a target="_blank" href="https://code.visualstudio.com"><img src="img/technologies/vscode.png" alt="Visual Studio Code"></a>
+                                </div>
+
+                                <p>Just a small experiment where I made a physics based player controller, reloadable guns, ammo boxes, a small inventory system and a small shooting range</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="projectItem">
+                            <h3>The $38 Shopping Campaign</h3>
+                            <p>Teardown custom campaign</p>
+                            <div class="popup">
+                                <video width="320" height="180" loop muted>
+                                    <source src="vid/38dollar.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                                <div class="popUpTechnologies">
+                                    <a target="_blank" href="https://git-scm.com/"><img src="img/technologies/git.png" alt="Git"></a>
+                                    <a target="_blank" href="https://github.com"><img src="img/technologies/github.png" alt="Github"></a>
+                                    <a target="_blank" href="https://www.lua.org/"><img src="img/technologies/lua.png" alt="Lua"></a>
+                                    <a target="_blank" href="https://store.steampowered.com/"><img src="img/technologies/steam.png" alt="Steam"></a>
+                                    <a target="_blank" href="https://www.teardowngame.com/"><img src="img/technologies/teardown.png" alt="Teardown"></a>
+                                    <a target="_blank" href="https://ephtracy.github.io/"><img src="img/technologies/magicavoxel.png" alt="MagicaVoxel"></a>
+                                    <a target="_blank" href="https://code.visualstudio.com"><img src="img/technologies/vscode.png" alt="Visual Studio Code"></a>
+                                </div>
+
+                                <p>A custom campaign for Teardown, filled with inside jokes from the Teardown Discord server.</p>
+                                <p>I worked on this with a team of around 10 people.</p>
+                                
+
+                                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3237289804" target="_blank">Go to project</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </div>
     </div>
 </body>
+
 </html>
