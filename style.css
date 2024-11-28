@@ -3,6 +3,8 @@ body {
     background-color: black;
 }
 
+/* content container */
+
 .content {
     max-width: 600px;
     margin: 0 auto;
@@ -25,6 +27,8 @@ body {
     text-align: center;
 }
 
+/* navbar */
+
 .navbar {
     text-align: center;
     margin: 0 auto;
@@ -38,7 +42,8 @@ body {
     height: 30px;
     border-radius: 10px;
 }
-.li {
+
+.navbarItem {
     display: inline;
     padding: 10px;
 }
@@ -55,6 +60,8 @@ body {
     text-shadow: 0 0 10px #fff;
     font-size: 1.7rem;
 }
+
+/* projects */
 
 .projects {
     display: flex;
@@ -89,6 +96,8 @@ body {
     margin-top: 10px; 
 }
 
+/* popup */
+
 @keyframes fadeIn {
     0% {
         opacity: 0%;
@@ -107,7 +116,7 @@ body {
     padding: 10px;
     transform: translate(-7.5%, -50%);
     display: none;
-    animation: fadeIn 0.1s forwards;
+    animation: fadeIn 0.1s ease-in forwards;
     border-radius: 5px;
 }
 
@@ -131,6 +140,8 @@ body {
     transition: text-shadow 0.1s ease;
 }
 
+/* technologies in the popup */
+
 .popUpTechnologies {
     height: 25px;
     text-align: center;
@@ -147,6 +158,19 @@ body {
     filter: drop-shadow(0 0 2.5px rgba(255, 255, 255, 0.7));
 }
 
+/* technologies bar */
+
+@keyframes popIn {
+    0% {
+        opacity: 0%;
+        transform: scale(0.5) translate(0, 100%);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(1) translate(0, 0);
+    }
+}
+
 .technologies {
     margin-top: 70px;
     display: flex;
@@ -155,9 +179,11 @@ body {
 }
 
 .technologies a img {
+    opacity: 0;
     height: 48px;
     margin: 5px;
-    transition: transform 0.1s ease, filter 0.1s ease;
+    transition: transform 0.1s ease-out, filter 0.1s ease;
+    animation: popIn 0.1s ease forwards;
 }
 
 .technologies a img:hover {
