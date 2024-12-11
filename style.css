@@ -6,7 +6,7 @@ body {
 /* content container */
 
 .content {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     margin-top: 50px;
@@ -59,7 +59,7 @@ body {
     color: #fff;
     transition: color 0.1s ease, text-shadow 0.1s ease, font-size 0.1s ease;
     text-shadow: 0 0 10px #fff;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 /* projects */
@@ -214,4 +214,52 @@ body {
     animation: fadeIn 0.25s ease-in forwards;
     position: absolute;
     z-index: -1000;
+}
+
+/* about me */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about h2 {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.about a {
+    color: rgb(0, 162, 255);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    transition: text-shadow 0.1s ease;
+}
+
+.about a:hover {
+    text-shadow: 0 0 10px rgb(0, 162, 255);
+    transition: text-shadow 0.1s ease;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.about img {
+    width: 40px;
+}
+
+.about p {
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
