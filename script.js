@@ -32,7 +32,7 @@ const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = document.body.clientHeight;
 
 const stars = [];
 const maxStars = 1000;
